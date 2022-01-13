@@ -6,16 +6,24 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 
-    <link href='https://css.gg/' rel='stylesheet'>
+    <link href='https://css.gg/user.css' rel='stylesheet'>
+    <link href='https://css.gg/mail.css' rel='stylesheet'>
+    <link href='https://css.gg/lock.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
         <div class="login">
             <h1 class="titulo">Faça Seu Login</h1>
             <form class="formulario">
-                <input type="text" placeholder="Usuário">
-                <input type="password" placeholder="Senha">
-                <a href="">Esqueceu sua senha?</a>
+                <label class= "label-icon"for="user">
+                    <i class="gg-user"></i>
+                    <input type="text" placeholder="Usuário">
+                </label>
+                <label class= "label-icon"for="user">
+                    <i class="gg-lock"></i>
+                    <input type="password" placeholder="Senha">
+                </label>
+                <a href="" id="forget">Esqueceu sua senha?</a>
                 <p>Para se cadastrar <a href="">clique aqui</a></p>
                 <button class="botao">Entrar</button>
             </form>
@@ -23,10 +31,22 @@
         <div class="cadastro">
             <h1 class="titulo">Cadastre-se</h1>
             <form class="formulario">
-                <input type="text" placeholder="Usuário">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <input type="password" placeholder="Confirme sua senha">
+                <label class= "label-icon"for="user">
+                    <i class="gg-user"></i>
+                    <input type="text" placeholder="Usuário" name="user">
+                </label>
+                <label class= "label-icon"for="email">
+                    <i class="gg-mail"></i>
+                    <input type="email" placeholder="Email" name="email">
+                </label>
+                <label class= "label-icon"for="password">
+                    <i class="gg-lock"></i>
+                    <input type="password" placeholder="Senha" name="password">
+                </label>
+                <label class= "label-icon"for="password-repeat">
+                    <i class="gg-lock"></i>
+                    <input type="password" placeholder="Confirme sua senha" name="password-repeat">
+                </label>
                 <p><a href="">Clique aqui</a>, caso já possua uma conta</p>
                 <button class="botao">Cadastrar-se</button>
             </form>
