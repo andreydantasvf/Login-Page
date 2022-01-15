@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="login">
+        <div class="login active">
             <h1 class="titulo">Faça Seu Login</h1>
             <form class="formulario">
                 <label class= "label-icon"for="user">
@@ -24,7 +24,7 @@
                     <input type="password" placeholder="Senha">
                 </label>
                 <a href="" id="forget">Esqueceu sua senha?</a>
-                <p>Para se cadastrar <a href="">clique aqui</a></p>
+                <p>Para se cadastrar <a id="go-register">clique aqui</a></p>
                 <button class="botao">Entrar</button>
             </form>
         </div>
@@ -47,10 +47,12 @@
                     <i class="gg-lock"></i>
                     <input type="password" placeholder="Confirme sua senha" name="password-repeat">
                 </label>
-                <p><a href="">Clique aqui</a>, caso já possua uma conta</p>
+                <p><a id="go-login">Clique aqui</a>, caso já possua uma conta</p>
                 <button class="botao">Cadastrar-se</button>
             </form>
         </div>
     </div>
+
+    <script src="./display.js"></script>
 </body>
 </html>
